@@ -1,0 +1,17 @@
+page {
+  padding: 20rpx 0;
+}
+page .header {
+  overflow: hidden;
+  color: #80bd01;
+}
+page .header .tab {
+  float: left;
+  margin-right: 20rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+page .header .tab.active {
+  background-color: #80bd01;
+  color: #fff;
+}

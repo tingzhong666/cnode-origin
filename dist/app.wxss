@@ -1,0 +1,5 @@
+@import "./fonticon/fonticon.wxss";
+page {
+  background-color: #e1e1e1;
+  color: #333;
+}

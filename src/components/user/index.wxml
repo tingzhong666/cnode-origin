@@ -1,0 +1,34 @@
+<!-- 只有 tap 属性为真，才有 hover 效果、点击事件 -->
+<view
+  class="user"
+  hover-class="{{tap ? 'hover' : ''}}"
+  bindtap="login">
+  <!-- 头像 -->
+  <view class="img">
+    <image src="{{tap ? '/images/logout.png' : img}}"></image>
+  </view>
+
+  <!-- info -->
+  <view class="info">
+    <view class="name">{{tap ? '未登录' : name}}</view>
+    <view class="github">
+      <text class="iconfont icon-GitHub"> @{{tap ? '' : githubName}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 列表 -->
+<hr/>
+<view
+  class="li"
+  wx:for="{{list}}"
+  wx:key="{{item}}"
+  hover-class="hover"
+  data-page="{{item.page}}"
+  data-query="{{item.query}}"
+  data-label="{{item.label}}"
+  bindtap="click">
+<text class="{{item.fonticon}}"></text>
+<view class="label">{{item.label}}</view>
+<view class="n">{{item.n < 0 ? '' : item.n + '篇'}}</view>
+</view>

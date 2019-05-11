@@ -1,0 +1,33 @@
+.not {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20rpx;
+}
+.not .iconfont {
+  color: #d4d6d8;
+  font-size: 100rpx;
+}
+.not .txt {
+  color: #71777c;
+  padding-top: 10rpx;
+}
+.li {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 33rpx;
+}
+.li.hover {
+  background-color: #f6f6f6;
+}
+.li text {
+  color: #0000b3;
+}
+.read {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  color: #80bd01;
+}

@@ -1,0 +1,17 @@
+@import "../../fonticon/fonticon.wxss";
+.top {
+  background-color: #80bd01;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 200rpx;
+  right: 100rpx;
+}
+.top .iconfont {
+  color: #fff;
+  font-size: 55rpx;
+}

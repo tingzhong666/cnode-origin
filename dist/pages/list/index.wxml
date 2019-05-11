@@ -1,0 +1,52 @@
+<loadpro
+  show="{{!loaded}}"
+  bindok="ok"
+  />
+
+<!-- 加载完成 -->
+<view class="ok" wx:if="{{show}}">
+  <!-- 无主题 -->
+  <view class="not" wx:if="{{!list.length}}">
+    <text class="{{fonticon}}"></text>
+    <text class="txt">暂无{{label}}</text>
+  </view>
+
+  <!-- 创建/参与 -->
+  <view
+    class="li"
+    wx:for="{{list}}"
+    wx:key="{{item.id}}"
+    wx:if="{{(label === '创建的主题' || label === '参于的主题') ? true : false}}"
+    hover-class="hover"
+    >
+    <!-- 头像 -->
+    <view
+      class="img"
+      wx:if="{{label === '创建的主题' ? false : true}}"
+      bindtap="user"
+      data-name="{{item.author.loginname}}"
+      >
+      <image src="{{item.author.avatar_url}}"></image>
+    </view>
+    <!-- 信息 -->
+    <view class="info" bindtap="topic" data-id="{{item.id}}">
+      <!-- 标题 -->
+      <view class="title">{{item.title}}</view>
+      <!-- 作者 时间 -->
+      <view class="bottom">
+        <!-- 作者 -->
+        <view class="name">{{item.author.loginname}}</view>
+        <!-- 最后回复时间 -->
+        <view class="time">{{item.last_reply_at}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 收藏 -->
+  <list
+    wx:for="{{list}}"
+    wx:key="{{item.id}}"
+    wx:if="{{label === '收藏的主题' ? true : false}}"
+    info="{{item}}"
+    />
+</view>

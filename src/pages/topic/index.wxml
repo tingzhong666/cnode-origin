@@ -1,0 +1,20 @@
+<!-- 进度条 -->
+<loadpro show="{{!load}}" bindok="ok"/>
+
+<view class="container" wx:if="{{show}}">
+  <!-- 收藏 -->
+  <view class="collect {{is_collect ? 'green' : 'ash'}}" bindtap="collect">
+    <text class="iconfont icon-shoucang2"></text>
+  </view>
+
+  <!-- 返回顶部 -->
+  <top wx:if="{{top}}"/>
+
+  <!-- 内容 -->
+  <topic
+    info="{{info}}"/>
+
+  <!-- 评论 -->
+  <hr/>
+  <comment comments="{{info.replies}}"/>
+</view>

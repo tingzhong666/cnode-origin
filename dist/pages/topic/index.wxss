@@ -1,0 +1,18 @@
+.container .collect {
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 50rpx;
+  bottom: 100rpx;
+}
+.container .collect.ash {
+  color: #71777c;
+}
+.container .collect.green {
+  color: #80bd01;
+}

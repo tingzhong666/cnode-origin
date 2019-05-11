@@ -1,0 +1,3 @@
+<view class="top">
+  <text class="iconfont icon-jiantoushang" bindtap="top"></text>
+</view>

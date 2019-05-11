@@ -1,0 +1,31 @@
+@import "../../../styl/theme.styl"
+
+// 未登录
+.not
+  background-color #fff
+  display flex
+  text-align center
+  flex-direction column
+  width 100%
+  padding 20rpx
+  .iconfont
+    color $ash + 70%
+    font-size 100rpx
+  .txt
+    color $ash
+    padding-top 10rpx
+// 列表
+.li
+  padding 20rpx
+  border-bottom 1rpx solid #eee
+  font-size 33rpx
+  &.hover
+    background-color $hover
+  text
+    color blue - 30%
+// 全都已读
+.read
+  position absolute
+  right 20rpx
+  top 20rpx
+  color $greend

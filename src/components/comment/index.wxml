@@ -1,0 +1,41 @@
+<view class="comment">
+  <!-- 无评论 -->
+  <view class="not" wx:if="{{not}}">
+    <text class="iconfont icon-xiaohuifudianji"></text>
+    <text class="txt">暂无评论</text>
+  </view>
+
+  <!-- 有评论 -->
+  <view wx:else class="comments">
+    <view class="li" wx:for="{{comments}}" wx:key="{{item.id}}">
+      <!-- 作者栏 -->
+      <view class="author">
+        <!-- 头像 -->
+        <view class="img" bindtap="user" data-name="{{item.author.loginname}}">
+          <image src="{{item.author.avatar_url}}"></image>
+        </view>
+        <!-- 信息 -->
+        <view class="info">
+          <!-- 作者 -->
+          <view class="name">{{item.author.loginname}}</view>
+          <!-- 时间 -->
+          <view class="time">第{{item.n}}楼 • {{item.create_at}}</view>
+        </view>
+        <!-- 点赞 -->
+        <view class="like">
+          <text
+          class="iconfont icon-dianzan {{item.is_uped ? 'green' : ''}}"
+          bindtap="like"></text>
+          {{item.ups.length ? item.ups.length : ''}}
+        </view>
+      </view>
+
+      <!-- 内容 -->
+      <view class="content">
+        <import src="/lib/towxml/entry.wxml"/>
+        <template is="entry" data="{{...item.content}}"/>
+      </view>
+    </view>
+  </view>
+  
+</view>

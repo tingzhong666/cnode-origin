@@ -1,0 +1,84 @@
+@import "../../../styl/theme.styl"
+@import "../../fonticon/fonticon.wxss"
+
+/**towxml 基础风格样式**/
+@import '../../lib/towxml/style/main.wxss'
+/**主题配色（浅色样式）**/
+@import '../../lib/towxml/style/theme/light.wxss'
+/**主题配色（深色样式）**/
+@import '../../lib/towxml/style/theme/dark.wxss'
+
+// 作者栏
+.author
+  display flex
+  background-color #fff
+  font-size 25rpx
+  color $ash
+  padding 10rpx 0
+  // 头像
+  .img
+    flex 2
+    display flex
+    align-items center
+    justify-content center
+    image
+      width 100rpx
+      height 100rpx
+      border-radius 50%
+  // 左 作者 时间
+  .left
+    flex 8
+    display flex
+    flex-direction column
+    // 作者
+    .name
+      flex 6
+      display flex
+      align-items center
+      font-size 40rpx
+      color #333
+    // 时间
+    .time
+      flex 4
+      display flex
+      align-items center
+  // 右 分类 浏览量
+  .right
+    flex 2
+    display flex
+    flex-direction column
+    padding-right 20rpx
+    // 分类
+    .tab
+      display flex
+      flex 1
+      justify-content flex-end
+      align-items center
+    // 浏览量
+    .read
+      display flex
+      justify-content flex-end
+      align-items center
+      flex 1
+// 标题栏
+.title
+  background-color #fff
+  display flex
+  align-items center
+  padding 20rpx
+  color #333
+  font-weight 700
+  border-bottom 1rpx solid #eee
+  // 置顶精华标识
+  .badge
+    background-color $greend
+    color #fff
+    font-weight 400
+    font-size 23rpx
+    margin-right 10rpx
+    padding 5rpx 10rpx
+    border-radius 7rpx
+// 内容
+.content
+  padding-bottom 20rpx
+  background-color #fff

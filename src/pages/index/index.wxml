@@ -1,0 +1,29 @@
+<view>
+  <!-- 返回顶部 -->
+  <top wx:if="{{top}}"/>
+  <Card mode='{{1}}'>
+
+    <!-- 头 -->
+    <view slot="header" class="header">
+      <view
+        wx:for="{{tabs}}"
+        class="tab {{item.active && 'active'}}"
+        wx:key="{{item.label}}"
+        bindtap='tabTap'
+        data-index='{{index}}'>{{item.label}}</view>
+    </view>
+
+    <!-- 内容 -->
+    <view slot="content" class="content">
+      <!-- 加载动图 -->
+      <Loading wx:if='{{!list}}'/>
+
+      <list
+      wx:for="{{list}}"
+      wx:key="{{item.id}}"
+      info="{{item}}"
+      imgshow="{{true}}"
+      tabshow="{{item.show}}"/>
+    </view>
+  </Card>
+</view>

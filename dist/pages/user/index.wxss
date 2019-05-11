@@ -1,0 +1,12 @@
+.logout {
+  background-color: #fff;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 33rpx;
+  color: #db0000;
+}
+.logout.hover {
+  background-color: #f6f6f6;
+}

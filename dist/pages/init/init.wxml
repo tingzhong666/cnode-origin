@@ -1,0 +1,5 @@
+<image
+  class="img"
+  src="/images/logo.svg"
+  style="margin-top: {{top}}px;">
+</image>

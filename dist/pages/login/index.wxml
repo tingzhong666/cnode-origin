@@ -1,0 +1,24 @@
+<!-- 扫码 -->
+<hr/>
+<view class="scan" hover-class="hover" bindtap="scan">
+  <text class="iconfont icon-saoma"></text>扫码登录
+</view>
+
+<!-- 教程 -->
+<hr/>
+<view class="course">
+  <!-- 进入设置 -->
+  <view class="title">
+    1.登录 CNode 中文社区网页端后，进入设置
+  </view>
+  <view class="content">
+    <image src="/images/course1.png"></image>
+  </view>
+  <!-- 扫描二维码 -->
+  <view class="title">
+    1.滑到网页底端，扫描二维码登录
+  </view>
+  <view class="content">
+    <image src="/images/course2.png"></image>
+  </view>
+</view>

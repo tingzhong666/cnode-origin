@@ -1,0 +1,57 @@
+@import "../../../styl/theme.styl"
+
+// 没主题
+.not
+  background-color #fff
+  display flex
+  flex-direction column
+  text-align center
+  padding 20rpx 0
+  .iconfont
+    color $ash + 70%
+    font-size 80rpx
+    padding 10rpx 0
+  .txt
+    color $ash
+    font-size 25rpx
+    padding 10rpx 0
+.li
+  background-color #fff
+  display flex
+  border-bottom 1rpx solid #eee
+  &.hover
+    background-color $hover
+  // 头像
+  .img
+    flex 1
+    display flex
+    justify-content center
+    align-items center
+    image
+      width 80rpx
+      height 80rpx
+      border-radius 50%
+  // info
+  .info
+    flex 7
+    display flex
+    flex-direction column
+    padding 10rpx 20rpx 20rpx 20rpx
+    // 标题
+    .title
+      flex 6
+      color #333
+      font-size 35rpx
+      // 溢出省略
+      display -webkit-box
+      -webkit-line-clamp 1
+      -webkit-box-orient vertical
+      overflow hidden
+      text-overflow ellipsis
+    // 作者 最后回复时间
+    .bottom
+      flex 4
+      display flex
+      justify-content space-between
+      font-size 28rpx
+      color $ash

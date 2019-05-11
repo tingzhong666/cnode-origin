@@ -1,0 +1,37 @@
+<!-- 作者栏 -->
+<view class="author">
+  <!-- 头像 -->
+  <view class="img" bindtap="user" data-name="{{info.author.loginname}}">
+    <image src="{{info.author.avatar_url}}"></image>
+  </view>
+  <!-- 左 作者 时间 -->
+  <view class="left">
+    <!-- 作者 -->
+    <view class="name">{{info.author.loginname}}</view>
+    <!-- 时间 -->
+    <view class="time">发布于{{info.create_at}} • 最后编辑于{{info.last_reply_at}}</view>
+  </view>
+  <!-- 右 分类 浏览量 -->
+  <view class="right">
+    <!-- 分类 -->
+    <view class="tab">@{{info.tab}}</view>
+    <!-- 浏览量 -->
+    <view class="read">
+      {{info.visit_count}}
+      <text class="iconfont icon-01"></text>
+      </view>
+  </view>
+</view>
+
+<!-- 标题栏 -->
+<view class="title">
+  <!-- 置顶精华标识 -->
+  <view wx:if="{{info.badge}}" class="badge">{{info.badgeT}}</view>
+  {{info.title}}
+</view>
+
+<!-- 内容 -->
+<view class="content">
+  <import src="/lib/towxml/entry.wxml"/>
+  <template is="entry" data="{{...article}}"/>
+</view>

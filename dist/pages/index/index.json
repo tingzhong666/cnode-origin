@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Card": "/components/card/card",
+    "Loading": "/components/loading/index",
+    "list": "/components/list/index",
+    "top": "/components/top/index"
+  },
+  "onReachBottomDistance": 300
+}

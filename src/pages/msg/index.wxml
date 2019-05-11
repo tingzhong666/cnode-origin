@@ -1,0 +1,64 @@
+<!-- 未登录 -->
+<view class="not" wx:if="{{!logined}}">
+  <text class="iconfont icon-xinxi"></text>
+  <text class="txt">未登录</text>
+</view>
+
+<block wx:else>
+  <!-- 未读消息 -->
+  <hr/>
+  <card mode="{{1}}">
+    <view slot="header">
+      未读信息
+      <!-- 标记全部已读 -->
+      <view class="read" bindtap="markAll">全部已读</view>
+    </view>
+    <view class="" slot="content">
+      <view
+        class="li"
+        wx:for="{{not}}"
+        wx:key="{{item.id}}"
+        wx:if="{{not.length}}"
+        bindtap="click"
+        data-not="{{true}}"
+        data-id="{{item.id}}"
+        hover-class="hover"
+        >
+        <text>{{item.author.loginname}}</text>
+        回复了话题
+        <text>{{item.topic.title}}</text>
+      </view>
+      <!-- 无 -->
+      <view class="not" wx:if="{{!not.length}}">
+        暂无
+      </view>
+    </view>
+  </card>
+
+  <!-- 已读消息 -->
+  <hr/>
+  <card mode="{{1}}">
+    <view slot="header">
+      过往信息
+    </view>
+    <view slot="content">
+      <view
+        class="li"
+        wx:for="{{already}}"
+        wx:key="{{item.id}}"
+        wx:if="{{already.length}}"
+        bindtap="click"
+        data-not="{{false}}"
+        data-id="{{item.id}}"
+        hover-class="hover"
+        >
+        <text>{{item.author.loginname}}</text>
+        回复了话题
+        <text>{{item.topic.title}}</text>
+      </view>
+      <view class="not" wx:if="{{!already.length}}">
+        暂无
+      </view>
+    </view>
+  </card>  
+</block>

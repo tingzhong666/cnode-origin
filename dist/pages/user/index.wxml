@@ -1,0 +1,22 @@
+<hr/>
+<user
+  img="{{userInfo.avatar_url}}"
+  name="{{userInfo.loginname}}"
+  githubName="{{userInfo.githubUsername}}"
+  tap="{{!logined}}"
+  bindlogin="login"
+  list="{{list}}"
+  bindclick="click"
+  />
+
+<!-- 退出 -->
+<hr/>
+<view
+  class="logout"
+  hover-class="hover"
+  bindtap="logout"
+  hover-class="hover"
+  wx:if="{{logined}}"
+  >
+  退出登录
+</view>

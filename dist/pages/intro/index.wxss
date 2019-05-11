@@ -1,0 +1,3 @@
+@import '../../lib/towxml/style/main.wxss';
+@import '../../lib/towxml/style/theme/light.wxss';
+@import '../../lib/towxml/style/theme/dark.wxss';

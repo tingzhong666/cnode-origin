@@ -1,0 +1,40 @@
+<view
+  class="li"
+  hover-class="hover">
+    <!-- 头像 -->
+    <view
+    class="author"
+    bindtap='authorTap'
+    data-user-name='{{item.author.loginname}}'
+    wx:if="{{imgshow}}">
+      <image
+      class=""
+      src="{{item.author.avatar_url}}">
+      </image>
+    </view>
+    <!-- 图标 -->
+    <view class="icon-class" wx:if='{{tabshow && item.tab}}'>
+      <view
+      class='{{item.green ? "green" : "tab"}}'>
+      {{item.tab}}</view>
+    </view>
+    <!-- 信息 -->
+    <view
+    class="info"
+    bindtap='infoTap'
+    data-id='{{item.id}}'>
+      <!-- 标题 -->
+      <view class="title">{{item.title}}</view>
+      <!-- 评论/阅读 发布时间 -->
+      <view class="action">
+        <!-- 左 -->
+        <view class="left">
+          <text class='comment'>{{item.reply_count}}</text>
+          <text>/</text>
+          <text class="read">{{item.visit_count}}</text>
+        </view>
+        <!-- 右 -->
+        <view class="right">{{item.create_at}}</view>
+      </view>
+    </view>
+  </view>

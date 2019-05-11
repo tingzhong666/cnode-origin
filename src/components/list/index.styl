@@ -1,0 +1,74 @@
+@import "../../../styl/theme.styl"
+
+.li
+  background-color #fff
+  height 100rpx
+  line-height 100rpx
+  border-bottom 1rpx solid $list-bottom
+  padding 10rpx
+  display flex
+  &.hover
+    background-color $list-hover
+  // 头像
+  .author
+    flex 1
+    padding 15rpx 20rpx
+    overflow hidden
+    image
+      width 70rpx
+      height 70rpx
+      border-radius 10rpx
+  // 图标分类
+  .icon-class
+    flex 1
+    font-size 28rpx
+    display flex
+    align-items center
+    margin-right 10rpx
+    view
+      height 50rpx
+      width 100%
+      line-height 50rpx
+      text-align center
+      border-radius 8rpx
+      // 普通分类
+      &.tab
+        color $list-color
+        background-color $list-bgc
+      // 精华置顶
+      &.green
+        color $list-colors-good
+        background-color $list-bgc-good
+  // 信息
+  .info
+    flex 8
+    display flex
+    flex-direction column
+    // 标题
+    .title
+      font-size 33rpx
+      line-height 72rpx
+      flex 7
+      // 溢出省略
+      display: -webkit-box
+      -webkit-line-clamp: 1
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+    // 评论 阅读 发布时间
+    .action
+      flex 3
+      font-size 25rpx
+      line-height 25rpx
+      overflow hidden
+      display flex
+      justify-content space-between
+      .left
+        // 评论
+        .comment
+          color $index-comment
+        // 阅读
+        .read
+          color $index-read
+      .right
+        color $index-publish

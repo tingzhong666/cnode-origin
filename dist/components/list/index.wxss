@@ -1,0 +1,75 @@
+.li {
+  background-color: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  padding: 10rpx;
+  display: flex;
+}
+.li.hover {
+  background-color: #f6f6f6;
+}
+.li .author {
+  flex: 1;
+  padding: 15rpx 20rpx;
+  overflow: hidden;
+}
+.li .author image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+}
+.li .icon-class {
+  flex: 1;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.li .icon-class view {
+  height: 50rpx;
+  width: 100%;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 8rpx;
+}
+.li .icon-class view.tab {
+  color: #999;
+  background-color: #e5e5e5;
+}
+.li .icon-class view.green {
+  color: #fff;
+  background-color: #80bd01;
+}
+.li .info {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+}
+.li .info .title {
+  font-size: 33rpx;
+  line-height: 72rpx;
+  flex: 7;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.li .info .action {
+  flex: 3;
+  font-size: 25rpx;
+  line-height: 25rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.li .info .action .left .comment {
+  color: #9e78c0;
+}
+.li .info .action .left .read {
+  color: #b4b4b4;
+}
+.li .info .action .right {
+  color: #778087;
+}

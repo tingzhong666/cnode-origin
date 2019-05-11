@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "topic": "/components/topic/index",
+    "loadpro": "/components/loadpro/index",
+    "hr": "/components/hr/index",
+    "comment": "/components/comment/index",
+    "top": "/components/top/index"
+  }
+}

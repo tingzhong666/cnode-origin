@@ -1,0 +1,11 @@
+<block wx:if="{{!loaded}}">
+  <load/>
+</block>
+
+<block wx:if="{{loaded}}">
+  <!-- 返回顶部 -->
+  <top wx:if="{{top}}"/>
+
+  <import src="/lib/towxml/entry.wxml"/>
+  <template is="entry" data="{{...md}}"/>
+</block>

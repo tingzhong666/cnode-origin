@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "user": "/components/user/index",
+    "hr": "/components/hr/index",
+    "loadpro": "/components/loadpro/index"
+  }
+}

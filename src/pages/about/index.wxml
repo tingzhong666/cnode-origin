@@ -1,0 +1,5 @@
+<!-- 返回顶部 -->
+<top wx:if="{{top}}"/>
+
+<import src="/lib/towxml/entry.wxml"/>
+<template is="entry" data="{{...md}}"/>

@@ -1,0 +1,79 @@
+@import "../../fonticon/fonticon.wxss";
+@import '../../lib/towxml/style/main.wxss';
+@import '../../lib/towxml/style/theme/light.wxss';
+@import '../../lib/towxml/style/theme/dark.wxss';
+.author {
+  display: flex;
+  background-color: #fff;
+  font-size: 25rpx;
+  color: #71777c;
+  padding: 10rpx 0;
+}
+.author .img {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author .img image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.author .left {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+}
+.author .left .name {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  color: #333;
+}
+.author .left .time {
+  flex: 4;
+  display: flex;
+  align-items: center;
+}
+.author .right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20rpx;
+}
+.author .right .tab {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.author .right .read {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.title {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 1rpx solid #eee;
+}
+.title .badge {
+  background-color: #80bd01;
+  color: #fff;
+  font-weight: 400;
+  font-size: 23rpx;
+  margin-right: 10rpx;
+  padding: 5rpx 10rpx;
+  border-radius: 7rpx;
+}
+.content {
+  padding-bottom: 20rpx;
+  background-color: #fff;
+}

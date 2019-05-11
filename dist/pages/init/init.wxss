@@ -1,0 +1,8 @@
+page {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+}
+page .img {
+  width: 600rpx;
+}

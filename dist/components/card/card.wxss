@@ -1,0 +1,18 @@
+.card {
+  width: 708rpx;
+  box-shadow: 0 0 0 1rpx #ccc;
+  border-radius: 7rpx;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.card .container {
+  font-size: 35rpx;
+  padding: 20rpx;
+}
+.card .header {
+  background-color: #f6f6f6;
+  position: relative;
+}
+.card .content {
+  background-color: #fff;
+}

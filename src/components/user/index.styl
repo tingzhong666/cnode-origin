@@ -1,0 +1,70 @@
+@import "../../../styl/theme.styl"
+@import "../../fonticon/fonticon.wxss"
+
+.user
+  background-color #fff
+  height 130rpx
+  display flex
+  &.hover
+    background-color $user-hover
+  // 头像
+  .img
+    flex 2
+    display flex
+    justify-content center
+    align-items center
+    image
+      width 100rpx
+      height 100rpx
+      border-radius 50%
+  // info
+  .info
+    flex 8
+    display flex
+    flex-direction column
+    .name
+      flex 6
+      display flex
+      align-items center
+    .github
+      flex 4
+      text
+        font-size 30rpx
+        color $user-ash
+  // 箭头
+  .arrow
+    flex 1
+    display flex
+    justify-content center
+    align-items center
+    color $user-arrow
+// 功能列表
+.li
+  background-color #fff
+  height 100rpx
+  display flex
+  border-bottom 1rpx solid #eee
+  &.hover
+    background-color $user-hover
+  // 图标
+  .iconfont
+    flex 1
+    justify-content center
+    display flex
+    align-items center
+    color $greend
+  // 描述
+  .label
+    flex 6
+    display flex
+    align-items center
+    font-size 33rpx
+  // 待定 数量
+  .n
+    flex 1
+    display flex
+    align-items center
+    justify-content flex-end
+    padding-right 20rpx
+    color $ash
+    font-size 30rpx

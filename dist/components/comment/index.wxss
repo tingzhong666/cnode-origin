@@ -1,0 +1,80 @@
+@import "../../fonticon/fonticon.wxss";
+@import '../../lib/towxml/style/main.wxss';
+.h2w__main {
+  margin: 0 40rpx 20rpx 40rpx;
+  padding-top: 20rpx;
+}
+@import '../../lib/towxml/style/theme/light.wxss';
+@import '../../lib/towxml/style/theme/dark.wxss';
+.comment {
+  background-color: #fff;
+}
+.not {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.not .iconfont {
+  color: #d4d6d8;
+  font-size: 80rpx;
+  padding: 10rpx 0;
+}
+.not .txt {
+  color: #71777c;
+  font-size: 25rpx;
+  padding: 10rpx 0;
+}
+.comments .li {
+  border: 1rpx solid #eee;
+  padding: 20rpx 20rpx 20rpx 0;
+}
+.comments .li .author {
+  display: flex;
+  color: #71777c;
+}
+.comments .li .author .img {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.comments .li .author .img image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.comments .li .author .info {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.comments .li .author .info .name {
+  flex: 7;
+  font-size: 40rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.comments .li .author .info .time {
+  flex: 3;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+.comments .li .author .like {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 35rpx;
+}
+.comments .li .author .like .iconfont {
+  font-size: 60rpx;
+}
+.comments .li .author .like .iconfont.green {
+  color: #80bd01;
+}
+.comments .li .content {
+  padding-left: 70rpx;
+}

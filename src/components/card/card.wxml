@@ -1,0 +1,16 @@
+<view class="card">
+  <!-- 头 -->
+  <view class="header container" wx:if='{{header}}'>
+    <slot name="header"></slot>
+  </view>
+
+  <!-- 内容 -->
+  <view class="content">
+    <slot name="content"></slot>
+  </view>
+
+  <!-- 脚 -->
+  <view class="footer container" wx:if='{{footer}}'>
+    <slot name="footer"></slot>
+  </view>
+</view>

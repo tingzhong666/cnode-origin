@@ -1,0 +1,14 @@
+<loadpro
+  show="{{!loaded}}"
+  bindok="ok"/>
+
+<hr/>
+<user
+  img="{{userInfo.avatar_url}}"
+  name="{{userInfo.loginname}}"
+  githubName="{{userInfo.githubUsername}}"
+  list="{{list}}"
+  bindclick="click"
+  wx:if="{{show}}"
+  />
+<hr/>

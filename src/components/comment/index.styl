@@ -1,0 +1,83 @@
+@import "../../../styl/theme.styl"
+@import "../../fonticon/fonticon.wxss"
+
+/**towxml 基础风格样式**/
+@import '../../lib/towxml/style/main.wxss'
+// 修改边距
+.h2w__main
+  margin 0 40rpx 20rpx 40rpx
+  padding-top 20rpx
+
+/**主题配色（浅色样式）**/
+@import '../../lib/towxml/style/theme/light.wxss'
+/**主题配色（深色样式）**/
+@import '../../lib/towxml/style/theme/dark.wxss'
+
+
+.comment
+    background-color #fff
+  // 没评论
+  .not
+    display flex
+    flex-direction column
+    text-align center
+    padding 20rpx 0
+    .iconfont
+      color $ash + 70%
+      font-size 80rpx
+      padding 10rpx 0
+    .txt
+      color $ash
+      font-size 25rpx
+      padding 10rpx 0
+  // 有评论
+  .comments
+    .li
+      border 1rpx solid #eee
+      padding 20rpx 20rpx 20rpx 0
+      // 作者栏
+      .author
+        display flex
+        color $ash
+        // 头像
+        .img
+          flex 1
+          display flex
+          text-align center
+          justify-content center
+          image
+            width 70rpx
+            height 70rpx
+            border-radius 50%
+        // 信息
+        .info
+          flex 5
+          display flex
+          flex-direction column
+          // 作者
+          .name
+            flex 7
+            font-size 40rpx
+            color #333
+            display flex
+            align-items center
+          // 时间
+          .time
+            flex 3
+            font-size 28rpx
+            display flex
+            align-items center
+        // 点赞
+        .like
+          flex 1
+          display flex
+          justify-content flex-end
+          align-items center
+          font-size 35rpx
+          .iconfont
+            font-size 60rpx
+            &.green
+              color $greend
+      // 内容
+      .content
+          padding-left 70rpx

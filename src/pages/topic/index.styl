@@ -1,0 +1,21 @@
+@import "../../../styl/theme.styl"
+
+.container
+  // 收藏
+  .collect
+    width 70rpx
+    height 70rpx
+    background-color #eee
+    display flex
+    justify-content center
+    align-items center
+    border-radius 50%
+    position fixed
+    right 50rpx
+    bottom 100rpx
+    // 未收藏
+    &.ash
+      color $ash
+    // 已收藏
+    &.green
+      color $greend

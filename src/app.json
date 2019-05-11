@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/init/init",
+    "pages/about/index",
+    "pages/intro/index",
+    "pages/api/index",
+    "pages/index/index",
+    "pages/msg/index",
+    "pages/user/index",
+    "pages/login/index",
+    "pages/userinfo/index",
+    "pages/topic/index",
+    "pages/list/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#444444",
+    "navigationBarTitleText": "CNode",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#ffffff",
+    "backgroundColor": "#444444",
+    "selectedColor": "#80bd01",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/intro/index",
+        "text": "入门"
+      },
+      {
+        "pagePath": "pages/api/index",
+        "text": "API"
+      },
+      {
+        "pagePath": "pages/msg/index",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人"
+      }
+    ]
+  }
+}
